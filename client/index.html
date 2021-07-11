@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Form Validator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Please register to get full access.</h2>
+
+        <div class="form-control">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" placeholder="Enter your firstname" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" placeholder="Enter your lastname" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error message</small>
+        </div>
+        <!-- Aufgabe 1b: Fügen Sie ein Eingabefeld für eine Telefonnummer hinzu -->
+        <div class="form-control">
+          <label for="mobile">Mobile number</label>
+          <input type="text" id="mobile" placeholder="Enter your number" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small>Error message</small>
+        </div>
+        <!-- Aufgabe 1c: Fügen Sie ein weiteres Passwortfeld (zur Bestätigung des ersten Passworts) hinzu 
+        <div class="form-control">
+          <label for="password2">Confirm Password</label>
+          <input type="password" id="password2" placeholder="Enter password again" />
+          <small>Error message</small>
+        </div> -->
+
+        <div class="checkbox">
+          <input type="checkbox" name="checkbox" id="checkbox" required/>
+          <label for="checkbox" id="message5">I accept the terms of service</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="validate-inputs.js"></script>
+  </body>
+</html>
+
